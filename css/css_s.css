@@ -1,0 +1,204 @@
+ /* variable */
+:root{
+    --color-bluelight:#bedcfa;
+    --color-skyblue:#51adcf;
+    --color-purple:#b088f9;
+    --color-purplelight:#da9ff9;
+    --color-lemoon:#fcf876;
+    --color-blue-matt:#8bcdcd;
+    --color-black-light:#373a40;
+}
+/* Fonts */
+@font-face {
+    font-family: "yekan";
+    src: url("../fonts/yekan.eot");
+    src: url("../fonts/yekan.eot") format("embedded-opentype"),
+        url("../fonts/yekan.woff2") format("woff2"), url("../fonts/yekan.woff") format("woff"),
+        url("../fonts/yekan.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/Vazir.eot");
+    src: url("../fonts/Vazir.eot") format("embedded-opentype"),
+        url("../fonts/Vazir.woff2") format("woff2"),
+        url("../fonts/Vazir.woff") format("woff"),
+        url("../fonts/Vazir.ttf") format("truetype");
+
+}
+/* Globall Settings */
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+a , p , li {
+    font-family: "vazir" , "yekan" , tahoma , arial;
+}
+h1,h2,h3,h4,h5{
+    font-family: "vazir" , "yekan" , tahoma  , arial ;
+    color: var(--color-skyblue);
+}
+body{
+    font-size: 13px;
+ color:#2e2e2e;
+}
+/* Section Header */
+.header{
+    background-size: cover ;
+    position: fixed ;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px -20px 40px var(--color-black-light);
+}
+.menu-list{
+    list-style: none;
+}
+.menu-list-item{
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.menu-list-item2{
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.menu-list-item3{
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.menu-list-item4{
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.menu-list-link{
+    color:var(--color-purplelight);
+    transition: all .3s;
+}
+.menu-list-link:hover{
+    color: var(--color-purple);
+    border-bottom: 2.2px solid var(--color-purple);
+}
+.search-box{
+    position: absolute;
+    top:8px ;
+    left: 55px;
+    background:none;
+    border: 2px solid var(--color-purple);
+    border-radius: 50px;
+}
+.search-btn{
+    color: var(--color-purplelight);
+    float: right;
+    width: 30px;
+    height: 30px;
+    background:none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+input {
+    color:#b3b3b3;
+}
+.search-txt{
+    font-family: "yekan" , tahoma , arial;
+    background: none;
+    border: none;
+    padding: 0px;
+    font-size: 14px;
+    outline: none;
+    transition: all 1s;
+    line-height: 2px;
+    margin-top:4px;
+    cursor: pointer;
+    width: 0px;
+}
+.search-box:hover > .search-txt {
+    width: 140px;
+    padding: 0px;
+}
+.search-box:hover > .search-btn {
+    color: var(--color-purple);
+}
+.bar{
+    position: absolute;
+    left: 15px;
+    top:7px;
+    color:#6155a6;
+    font-size: 25px;
+    transition: all .4s;
+}
+.bar:hover{
+    color: var(--color-purplelight);
+}
+/* main */
+.main{
+    position: relative;
+    background-color: #fff;
+}
+
+.home-page{
+    position: absolute ;
+    top: 70px ;
+    right: 65px ;
+    font-size: 10px;
+    padding-left: 15px ;
+}
+.entity{
+    position: absolute ;
+    top: 70px ;
+    right:140px ;
+}
+
+.Work-samples{
+    position: absolute;
+    top: 130px;
+    right: 4% ;
+}
+.home-link{
+    position: absolute;
+    top: 64px ;
+    right: 155px ;
+    font-family: "yekan";
+    font-size: 17px;
+    color: var(--color-purplelight);
+    border-bottom-right-radius: 3px var(--color-purple) solid;
+    transition: all.3s;
+    cursor: pointer;
+
+}
+.home-link:hover{
+    color: var(--color-purple);
+    border-bottom: 2px var(--color-purple) solid;
+}
+.work-1{
+    position: absolute ;
+    top: 210px ;
+    right: 3% ;
+    border-radius: 50% ;
+    border: 2px solid var(--color-skyblue) ;
+    width: 200px ;
+    height: 200px ;
+    transition: all .7s ;
+}
+.work-1:hover {
+    transform: translateY(-15px);
+}
+.p-work{
+    color: #6155a6;
+    position: absolute;
+    top:72%;
+    right:3.5%;
+    transition: all .5s;
+}
